@@ -43,17 +43,21 @@ const Wheel = () => {
   return (
     <main
       style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 20 }}>
-      <div style={{ minHeight: 35, fontSize: 24 }}>{result}</div>
-      <button onClick={handleButtonClick} style={{ zIndex: 2 }}>
-        Spin
-      </button>
+      <div style={{ minHeight: 40, fontSize: 30 }}>{result}</div>
       <div
-        style={{
-          borderTop: '10px solid #000',
-          borderLeft: '10px solid transparent',
-          borderRight: '10px solid transparent',
-          marginBottom: '10px',
-        }}></div>
+        id="spin"
+        onClick={handleButtonClick}
+        style={{ zIndex: 2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <button>Spin</button>
+        <div
+          style={{
+            borderTop: '10px solid #000',
+            borderLeft: '10px solid transparent',
+            borderRight: '10px solid transparent',
+            marginBottom: '10px',
+          }}
+        />
+      </div>
       <Image
         src="/wheel.png"
         width={2048}
