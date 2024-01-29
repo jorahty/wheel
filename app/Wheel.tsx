@@ -53,6 +53,7 @@ export const Wheel = () => {
         />
       </div>
       <Image
+        priority
         src="/wheel.png"
         width={2048}
         height={2048}
