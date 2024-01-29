@@ -41,7 +41,8 @@ const Wheel = () => {
   }, [velocity]);
 
   return (
-    <main style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: 20 }}>
+    <main
+      style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 20 }}>
       <div style={{ minHeight: 35, fontSize: 24 }}>{result}</div>
       <button onClick={handleButtonClick} style={{ zIndex: 2 }}>
         Spin
@@ -60,8 +61,8 @@ const Wheel = () => {
         alt="Wheel"
         style={{
           transform: `rotate(${rotation}deg)`,
-          height: '500px',
-          width: 'auto',
+          width: 'min(80vw, 70vh)',
+          height: 'auto',
         }}
       />
     </main>
