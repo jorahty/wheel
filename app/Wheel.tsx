@@ -36,8 +36,7 @@ export const Wheel = () => {
   }, [velocity]);
 
   return (
-    <main
-      style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 20 }}>
+    <main style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <div style={{ minHeight: 40, fontSize: 30 }}>{result}</div>
       <div
         id="spin"
